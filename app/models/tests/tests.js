@@ -18,7 +18,7 @@ async function test02(id) {
         const searchedPokemonWithType = await Pokemon.findByPk(id, {
             include: "types",
         });
-        console.log(searchedPokemonWithType.get({ plain: true }));
+        console.log(JSON.stringify(searchedPokemonWithType, null, 2));
     } catch (error) {
         console.log(error.message);
     }
