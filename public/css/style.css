@@ -10,7 +10,7 @@
         margin: 0 auto;
     }
     
-    /* HEADER */
+/* HEADER */
     header {
         display:flex;
         flex-direction: column;
@@ -72,7 +72,7 @@
     }
     
 
-    /* MAIN */
+/* MAIN */
     main{
         padding: 1rem;
         font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -86,12 +86,14 @@
     }
 
     h2 {
-        font-weight: bold;
         border-bottom: 1px solid rgb(36,36,36);
     }
 
+    h2 strong {
+        font-weight: bold;
+    }
+
     #pokemons-list-container {
-        border: 1px solid red;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         display:flex;
@@ -100,13 +102,51 @@
     }
 
     .pokemon-card {
-        border: 1px solid blue;
-        width: 130px;
-        height: 180px;
+        border: 1px solid rgb(36,36,36);
+        border-radius: 5px;
+        background-color: lightgray;
+        width: 135px;
+        height: 150px;
         margin: 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pokemon-card-header{
+        font-family: 'Press Start 2P', cursive;
+        transform: scale(1, 1.1);
+        font-size: 0.45rem;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.4rem 0 0.4rem;
+    }
+
+    .pokemon-card-img{
+        width: 90px;
+        /* margin: 0.2rem auto; */
+    }
+
+    .button-details-pokemon {
+        margin-bottom: 0.5rem;
+        width:80%;
+        height: 20px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 5px;
+    }
+
+    .button-details-pokemon a {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: rgb(36,36,36);
+        letter-spacing: 0.3px;
+        text-align: center;
+        font-size: 0.7rem;
+        text-decoration: none;
     }
     
-    /* FOOTER */
+/* FOOTER */
     footer {
         font-family: 'Press Start 2P', cursive;
         font-size: 0.4rem;
