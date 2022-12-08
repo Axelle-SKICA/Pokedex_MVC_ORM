@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-/* AFFICHAGE MOBILE : */
-@media screen and (max-width: 768px) {
+/*------- MOBILE FIRST -------: */
     body {
         width: 100%;
         max-width: 768px;
@@ -157,4 +156,9 @@
         background: linear-gradient(45deg, rgb(185, 185, 185), rgb(87, 87, 87));
     }
 
+/* -------AFFICHAGE HORS MOBILE------- */
+    @media screen and (min-width: 769px) {
+        body {
+            max-width:none;
+        }
 }
