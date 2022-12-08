@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../sequelize-client");
+const sequelize = require("../client-sequelize");
 
-class Pokemon extends Model { };
+class Pokemon extends Model {};
 
 Pokemon.init({
     nom: {
