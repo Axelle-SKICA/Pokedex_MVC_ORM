@@ -9,7 +9,18 @@
     <%- include("partials/header") %> 
 
     <main>
-        <section id="pokemon-details-container">Ici sera le détail du Pokemon : <%=pokemon.nom%></section>
+        <section id="pokemon-details-container">
+            <div id="pokemon-header-container">
+                <h2><%= pokemon.nom%></h2>
+                <p>#<%=pokemon.id%></p>
+            </div>
+            <div id="img-and-stats-container">
+                <img src="/images/<%=pokemon.id%>.png" alt="<%=pokemon.nom%>">
+                <div id="stats-container">
+                    <h3 id="stats-head-title">Statistiques</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
     <%- include("partials/footer") %> 
