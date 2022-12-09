@@ -24,7 +24,7 @@ async function test02(id) {
     }
 };
 
-test02(25);
+// test02(25);
 
 
 //afficher en console le Type Psy avec les pokemons de ce type:
