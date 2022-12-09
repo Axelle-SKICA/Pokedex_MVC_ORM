@@ -9,6 +9,22 @@ const pokemonsController = {
             console.log(error.message);
             res.status(500).send(error.message);
         }
+    },
+
+    getOnePokemonPage: async (req, res) => {
+        //on récupère l'id du pokemon dans l'url de la route paramétrée
+        const searchedId = Number(req.params.id);
+        
+        try {
+            const searchedPokemon = await Pokemon.findByPk(searchedId, {
+                include: "types"
+            });
+            console.log(searchedPokemon.get({plain: true}));
+            res.render('pokemonDetails', { pokemon: searchedPokemon });
+        } catch (error) {
+            console.log(error.message);
+            res.status(500).send(error.message);
+        }
     }
 }
 
