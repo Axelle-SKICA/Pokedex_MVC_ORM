@@ -7,7 +7,7 @@ const pokemonsController = {
             res.render("pokemons", {pokemons});
         } catch (error) {
             console.log(error.message);
-            res.status(500).send(error.message);
+            res.status(500).render('500');
         }
     },
 
@@ -23,7 +23,7 @@ const pokemonsController = {
             res.render('pokemonDetails', { pokemon: searchedPokemon });
         } catch (error) {
             console.log(error.message);
-            res.status(500).send(error.message);
+            res.status(500).render('500');
         }
     }
 }
