@@ -72,11 +72,22 @@
     
 
 /* MAIN */
+    h1{
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    p{ 
+        margin-bottom: 0.3rem;
+    }
+
     main{
         padding: 1rem;
         font-family: 'Yanone Kaffeesatz', sans-serif;
         color: rgb(36,36,36);
         letter-spacing: 0.3px;
+        min-height:85vh;
     }
     
     li {
