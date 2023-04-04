@@ -126,7 +126,7 @@
     .main-section-title strong {
         font-weight: bold;
     }
-    /* page tous pokemons */
+    /* All pokemons page */
     #pokemons-list-container {
         margin-top: 0.5rem;
         display:flex;
@@ -178,7 +178,7 @@
         text-decoration: none;
     }
 
-    /* page détails un pokemon */
+    /* 1 pokemon - details page */
     #pokemon-details-container {
         width: 90%;
         margin: 0.5rem auto;
@@ -255,52 +255,51 @@
 
 
 
-/* -------AFFICHAGE HORS MOBILE------- */
+/* -------TABLET / DESKTOP ------- */
     @media screen and (min-width: 769px) {
         
 /* HEADER */
 
-#main-title-container img {
-    width: 60px;
+    #main-title-container img {
+        width: 60px;
 
-}
+    }
 
-#website-title {
-    font-size: 1.9rem;
-}
+    #website-title {
+        font-size: 1.9rem;
+    }
 
-nav {
-    font-size:1.5rem;
-    letter-spacing: 0.3px;
+    nav {
+        font-size:1.5rem;
+        letter-spacing: 0.3px;
 
-}
+    }
 
 /* BODY */
         
-        body {
-            max-width:100%;
-        }
+    body {
+        max-width:100%;
+    }
 
-        
-        .main-container {
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        
-        h1{
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
+    .main-container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
     
-        #intro{
-            font-size: 1.5rem;
-        }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
 
-        #pokedex-home-img {
-            max-width: 1000px;
-            width: 500px;
-            margin: 3.5rem;
-        }
+    #intro{
+        font-size: 1.5rem;
+    }
+
+    #pokedex-home-img {
+        max-width: 1000px;
+        width: 500px;
+        margin: 3.5rem;
+    }
 
 
 /*POKEMON PAGES*/    
@@ -365,24 +364,25 @@ nav {
             font-size: 1.2rem;
         }
 
-    /*TYPES*/
+/*TYPES*/
 
-        #types-list {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1.8rem;
-        }
+    #types-list {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
 
-        #types-list li {
-            font-size: 1.5rem;
-            margin-bottom: 0.3rem;
-        }
+    #types-list li {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
 
-        #types-list-container a {
-            font-size: 1.2rem;
-        }
+    #types-list-container a {
+        font-size: 1.2rem;
+    }
 
 /* FOOTER */
     footer {
         font-size: 0.6rem;
+    }
 }
