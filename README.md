@@ -4,7 +4,7 @@
 
 Le but de ce projet est la création d'une application Pokedex, pensée _mobile first_. Ce __Pokedex__ répertorie l'ensemble des Pokemons de première génération.
 
-Sur la ___home___, il est possible d'afficher un Pokemon au hasard.
+Sur la ___home___, il est possible d'afficher un Pokemon au hasard en cliquant sur le bouton _"Afficher un Pokémon au hasard"_.
 
 La route ___/pokemons___ permet d'afficher la liste de tous les Pokemons.
 
@@ -30,9 +30,13 @@ __Ce projet est un "work in progress"__, j'espère pouvoir le faire évoluer pro
 L'objectif est de travailler :
 - une app en architecture MVC (Sequelize, EJS, routers & controllers)
 - l'utilisation de l'ORM Sequelize
-- le CSS :
+- la dynamisation des pages avec JavaScript :
+  - appel à une API externe en asynchrone avec "fetch",
+  - écouteurs d'événements,
+  - manipulation du DOM 
+- le designa avec CSS :
   - flexbox,
-  - travail du responsive en mobile first avec des Media queries... 
+  - travail du responsive (en mobile first) avec des Media queries... 
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=ffffff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff)
