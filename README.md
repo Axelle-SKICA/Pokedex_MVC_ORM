@@ -4,6 +4,8 @@
 
 Le but de ce projet est la création d'une application Pokedex, pensée _mobile first_. Ce __Pokedex__ répertorie l'ensemble des Pokemons de première génération.
 
+Sur la ___home___, il est possible d'afficher un Pokemon au hasard.
+
 La route ___/pokemons___ permet d'afficher la liste de tous les Pokemons.
 
 la route ___/pokemons/:id___ permet d'afficher les informations d'un Pokemon (à partir de son id), notamment : 
