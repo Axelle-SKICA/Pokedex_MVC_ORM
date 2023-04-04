@@ -1,21 +1,21 @@
-
-function init() {
-    const randomId = getRandomId(1, 151);
-    addEventListener();
-    handleButtonClick(randomId);
+   
+function addEventListener() {
+    const buttonHtmlElmt = document.getElementById('random-pokemon-button');
+    console.log(buttonHtmlElmt);
+    buttonHtmlElmt.addEventListener("click", handleButtonClick);
 }
 
 function getRandomId(min, max) {
     return Math.round(Math.random()*(max-min)+min)
-}
+} 
 
-function addEventListener(){
-    document.getElementById('random-pokemon-button');
-}
-
-async function handleButtonClick(id) {
-    const httpResponse = await fetch(`https://pokebuildapi.fr/api/v1/pokemon/${id}/`);
+async function handleButtonClick() {
+    const randomId = getRandomId(1, 151);
+    const httpResponse = await fetch(`https://pokebuildapi.fr/api/v1/pokemon/${randomId}/`);
     const result = await httpResponse.json();
+
+    const divRandomPokemonElmt = document.getElementById('random-pokemon');
+    divRandomPokemonElmt.style.display="flex";
 
     const randomPokemonImgElmt = document.getElementById('random-pokemon-image');
     randomPokemonImgElmt.setAttribute('src', `${result.image}`);
@@ -26,4 +26,4 @@ async function handleButtonClick(id) {
 
 }
 
-init();
+addEventListener();
