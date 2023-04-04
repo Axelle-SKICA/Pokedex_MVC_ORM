@@ -9,22 +9,24 @@
     <%- include("partials/header") %> 
 
     <main>
-        <h2 class="main-section-title"><strong>Liste des Pokemons</strong> - 1ère génération</h2>
-        <section id="pokemons-list-container">
-            <% for (const pokemon of pokemons) { %>
-                <article class="pokemon-card">
-                    <div class="pokemon-card-header">
-                        <h3><%=pokemon.nom%></h3>
-                        <p>#<%=pokemon.id%></p>
-                    </div>
-                    <img src="/images/<%=pokemon.id%>.png" alt="<%=pokemon.nom%>" class="pokemon-card-img">
-                    <button class="button-details-pokemon">
-                        <a href="/pokemons/<%=pokemon.id%>">En savoir +</a>
-                    </button>
-                </article>
-            <% } %>
+        <div class="main-container">
+            <h2 class="main-section-title"><strong>Liste des Pokemons</strong> - 1ère génération</h2>
+            <section id="pokemons-list-container">
+                <% for (const pokemon of pokemons) { %>
+                    <article class="pokemon-card">
+                        <div class="pokemon-card-header">
+                            <h3><%=pokemon.nom%></h3>
+                            <p>#<%=pokemon.id%></p>
+                        </div>
+                        <img src="/images/<%=pokemon.id%>.png" alt="<%=pokemon.nom%>" class="pokemon-card-img">
+                        <button class="button-details-pokemon">
+                            <a href="/pokemons/<%=pokemon.id%>">En savoir +</a>
+                        </button>
+                    </article>
+                <% } %>
 
-        </section>
+            </section>
+        </div>
     </main>
 
     <%- include("partials/footer") %> 

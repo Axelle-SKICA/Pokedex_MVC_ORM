@@ -18,7 +18,7 @@
     }
 
     #main-title-container {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -73,21 +73,28 @@
 
 /* MAIN */
     h1{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #intro{
+        max-width: 100%;
+        font-size: 1rem;
     }
 
     p{ 
         margin-bottom: 0.3rem;
+        display:block;
+        text-align: center;
     }
 
     main{
-        padding: 1rem;
+        /* padding: 1rem; */
+        background-color: #f3f3f3;
         font-family: 'Yanone Kaffeesatz', sans-serif;
         color: rgb(36,36,36);
         letter-spacing: 0.3px;
-        min-height:85vh;
     }
     
     li {
@@ -95,7 +102,24 @@
         list-style-position: inside;
     }
 
+    .main-container {
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        width: 100%;
+        align-items: center;
+        min-height:85vh;
+    }
+
+    #pokedex-home-img {
+        max-width: 300px;
+        margin: 2rem;
+    }
+
+
    .main-section-title {
+        font-size: 1.2rem;
         border-bottom: 1px solid rgb(36,36,36);
     }
 
@@ -114,8 +138,8 @@
         border: 1px solid rgb(36,36,36);
         border-radius: 5px;
         background-color: lightgray;
-        width: 135px;
-        height: 150px;
+        width: 243px;
+        height: 270px;
         margin: 0.5rem 1rem;
         display: flex;
         flex-direction: column;
@@ -126,21 +150,21 @@
     .pokemon-card-header{
         font-family: 'Press Start 2P', cursive;
         transform: scale(1, 1.1);
-        font-size: 0.45rem;
+        font-size: 0.75rem;
         width:100%;
         display:flex;
         justify-content: space-between;
-        padding: 0.5rem 0.4rem 0 0.4rem;
+        padding: 0.8rem 0.7rem 0 0.7rem;
     }
 
     .pokemon-card-img{
-        width: 90px;
+        width: 150px;
     }
 
     .button-details-pokemon {
         margin-bottom: 0.5rem;
         width:80%;
-        height: 20px;
+        height: 35px;
         border: 1px solid rgb(36, 36, 36);
         border-radius: 5px;
     }
@@ -150,16 +174,17 @@
         color: rgb(36,36,36);
         letter-spacing: 0.3px;
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-decoration: none;
     }
 
     /* page détails un pokemon */
     #pokemon-details-container {
-        width: 100%;
+        width: 90%;
+        margin: 0.5rem auto;
         border: 1px solid rgb(36,36,36);
         border-radius: 7px;
-        padding: 0.5rem;
+        padding: 0.8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -168,7 +193,7 @@
     #pokemon-header-container {
         font-family: 'Press Start 2P', cursive;
         transform: scale(1, 1.1);
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -189,6 +214,7 @@
 
     #stats-container {
         width: 100%;
+        height: 162px;
         border: 1px solid blue;
         padding: 0.3rem;
         border-radius: 5px;
@@ -196,9 +222,26 @@
 
     #stats-head-title {
         font-weight: bold;
-        font-size: 0.9rem;;
+        font-size: 1rem;;
         border-bottom: 1px solid rgb(36,36,36);
     }
+
+    #return-link-container {
+        margin: 1rem auto;
+    }
+
+    /*Types page*/
+    #types-list{
+        margin: 1rem auto;
+    }
+
+    #types-list li {
+        font-size: 1.2rem;
+        list-style-image: url("/images/Poke_Ball_bullet.png");
+        margin-bottom: 0.2rem;
+    }
+
+
     
 /* FOOTER */
     footer {
@@ -210,9 +253,136 @@
         background: linear-gradient(45deg, rgb(185, 185, 185), rgb(87, 87, 87));
     }
 
+
+
 /* -------AFFICHAGE HORS MOBILE------- */
     @media screen and (min-width: 769px) {
+        
+/* HEADER */
+
+#main-title-container img {
+    width: 60px;
+
+}
+
+#website-title {
+    font-size: 1.9rem;
+}
+
+nav {
+    font-size:1.5rem;
+    letter-spacing: 0.3px;
+
+}
+
+/* BODY */
+        
         body {
-            max-width:none;
+            max-width:100%;
         }
+
+        
+        .main-container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        #intro{
+            font-size: 1.5rem;
+        }
+
+        #pokedex-home-img {
+            max-width: 1000px;
+            width: 500px;
+            margin: 3.5rem;
+        }
+
+
+/*POKEMON PAGES*/    
+    .main-section-title {
+        font-size: 1.7rem;
+    }
+
+    /* LIST OF POKEMONS */
+
+        .pokemon-card {
+            width: 202px;
+            height: 225px;
+        }
+
+        .pokemon-card-header{
+            font-size: 0.65rem;
+
+        }
+
+        .pokemon-card-img{
+            width: 130px;
+        }
+
+        .button-details-pokemon {
+            margin-bottom: 0.6rem;
+            height: 32px;
+        }
+
+        .button-details-pokemon a {
+            font-size: 1.1rem;
+        }
+    
+    /* POKEMON DETAILS*/
+        
+        #pokemon-details-container {
+            width: 70%;
+        }
+
+        #pokemon-header-container {
+            flex-direction: column;
+            font-size: 0.8rem;
+        }
+
+        #pokemon-header-container h2 {
+            margin-bottom: 0.5rem;;
+        }
+
+        #pokemon-header-container p {
+            text-align:start;
+        }
+
+        #img-and-stats-container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    
+        #stats-head-title {
+            font-size: 1.2rem;
+        }
+
+        #return-link-container {
+            font-size: 1.2rem;
+        }
+
+    /*TYPES*/
+
+        #types-list {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        #types-list li {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        #types-list-container a {
+            font-size: 1.2rem;
+        }
+
+/* FOOTER */
+    footer {
+        font-size: 0.6rem;
 }

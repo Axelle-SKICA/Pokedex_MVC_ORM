@@ -1,36 +1,47 @@
-# Projet pokedex
+# Pokedex
 
-Le but de ce projet est la création d'une application Pokedex, pensée _mobile first_ 
+## Description
 
-Ce __Pokedex__ répertorie l'ensemble des Pokemons de première génération, et permet d'afficher les informations de chacun de ces Pokemons, notamment :  
+Le but de ce projet est la création d'une application Pokedex, pensée _mobile first_. Ce __Pokedex__ répertorie l'ensemble des Pokemons de première génération.
+
+La route ___/pokemons___ permet d'afficher la liste de tous les Pokemons.
+
+la route ___/pokemons/:id___ permet d'afficher les informations d'un Pokemon (à partir de son id), notamment : 
+
 - image
 - nom
+- numéro  
+
+Puis prochainement :
+
 - type(s)
 - attaques
 - statistiques
 - éventuelles évolutions
 
-Puis il proposera dans un second temps une rubrique Type pour afficher la liste des types existants ainsi que la liste des Pokemons pour chacun de ces types.
+La route ___/types___ permet d'afficher la liste de tous les types de Pokemons.
 
 __Ce projet est un "work in progress"__, j'espère pouvoir le faire évoluer prochainement.
 
-# Technologies
+## Technologies
 
 L'objectif est de travailler :
 - une app en architecture MVC (Sequelize, EJS, routers & controllers)
-- l'utilisation d' l'ORM Sequelize
-- travail CSS : flexbox, travail du responsive en mobile first... 
+- l'utilisation de l'ORM Sequelize
+- le CSS :
+  - flexbox,
+  - travail du responsive en mobile first avec des Media queries... 
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=ffffff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff)
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![NodeJS](https://img.shields.io/badge/node-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
-![ExpressJS](https://img.shields.io/badge/Express-ccc?style=for-the-badge&logo=express&logoColor=black)
+![Node](https://img.shields.io/badge/node-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-ccc?style=for-the-badge&logo=express&logoColor=black)
 ![EJS](https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge)
 ![PostgreSQL](https://img.shields.io/badge/postgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue)
 
-# Lancement
+## Lancement
 
 Installation des dépendances :
 

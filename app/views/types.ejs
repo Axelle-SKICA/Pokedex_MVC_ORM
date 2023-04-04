@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head/meta") %> 
+    <%- include("partials/head/css") %> 
+    <%- include("partials/head/title", { subtitle: "Tous les Types de Pokemons !" }) %> 
+</head>
+<body>
+    <%- include("partials/header") %> 
+
+    <main>
+        <div class="main-container">
+            <h2 class="main-section-title"><strong>Liste des Types de Pokemons</strong> - 1ère génération</h2>
+            <section id="types-list-container">
+                <ul id="types-list">
+                    <% for (const type of types) { %>
+                        <li><%=type.name%></li>
+                    <% } %>
+                </ul>
+                <a href="/"><< Retour à l'accueil</a>
+            </section>
+        </div>
+    </main>
+
+    <%- include("partials/footer") %> 
+</body>
+</html>
