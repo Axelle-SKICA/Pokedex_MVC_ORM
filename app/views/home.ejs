@@ -11,14 +11,33 @@
     <main>
         <div class="main-container">
             <h1>Bienvenue sur le Pokedex !</h1>
-            <div id="intro">
-                <p>Ce site est en cours de construction : actuellement la liste des Pokemons de première génération est disponible dans la rubrique <a href="/pokemons">Pokemons</a>.</p>
-                <p>Il a été conçu "mobile first". Alors, jeune dresseur, n'hésite pas à le consulter sur ton smartphone !</p>
-            </div>
             <img id="pokedex-home-img" src="/images/pokedex-home.png" alt="Pokedex">
+            <div id="intro">
+                <p>
+                    Ce site est en cours de construction.
+                    <br>
+                    <br>
+                    Il a été conçu "mobile first". Alors, jeune dresseur, n'hésite pas à le consulter sur ton smartphone !
+                    <br>
+                    <br>
+                    > La liste des Pokemons de première génération est disponible dans la rubrique <a href="/pokemons">Pokemons</a>,
+                    <br>
+                    <br>
+                    > La liste des Types de Pokemons de première génération est disponible dans la rubrique <a href="/types">Types</a>.
+                </p>
+            </div>
+            <div id="random-pokemon-container">
+                <button id="random-pokemon-button">Afficher un Pokemon au hasard</button>
+                <div id="random-pokemon">
+                    <img id="random-pokemon-image" src="" alt="">
+                    <p id="random-pokemon-description"></p>
+                </div>
+            </div>
         </div>  
     </main>
 
     <%- include("partials/footer") %> 
+
+    <script src="main.js"></script>
 </body>
 </html>

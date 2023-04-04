@@ -11,6 +11,11 @@ app.set('views', './app/views');
 //config dossier public
 app.use(express.static(path.join(__dirname, './public')));
 
+//to test the home page in static version:
+// app.use((req, res) => {
+//   res.sendFile((path.join(__dirname, './public/html/home.html')));
+// })
+
 //gestion des routes:
 app.use(router);
 //gestion de la 404:
