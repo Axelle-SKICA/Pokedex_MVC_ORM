@@ -21,7 +21,7 @@ const pokemonsController = {
             const searchedPokemon = await Pokemon.findByPk(searchedId, {
                 include: "types"
             });
-            console.log(searchedPokemon.get({plain: true}));
+            // console.log(searchedPokemon.get({plain: true}));
             res.render('pokemonDetails', { pokemon: searchedPokemon });
         } catch (error) {
             console.log(error.message);

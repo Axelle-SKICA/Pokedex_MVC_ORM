@@ -4,21 +4,26 @@ const path = require('path');
 require('dotenv').config();
 const router = require('./app/router')
 
-//config EJS
+// EJS setup
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
-//config dossier public
+// public directory setup
 app.use(express.static(path.join(__dirname, './public')));
 
-//to test the home page in static version:
-// app.use((req, res) => {
+// to test static version of pages,
+// uncomment below and comment router:
+// app.get('/', (req, res) => {
 //   res.sendFile((path.join(__dirname, './public/html/home.html')));
-// })
+// });
+// app.get('/pokemons/1', (req, res) => {
+//     res.sendFile((path.join(__dirname, './public/html/pokemonDetails.html')));
+//   });
 
-//gestion des routes:
+// router :
 app.use(router);
-//gestion de la 404:
+
+// error 404 handling :
 app.use((req, res) => {
     res.status(404).render('404');
   });

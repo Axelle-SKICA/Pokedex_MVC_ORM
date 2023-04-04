@@ -71,7 +71,7 @@
     }
     
 
-/* MAIN */
+/* MAIN - HOME */
     h1{
         font-size: 1.5rem;
         font-weight: bold;
@@ -138,9 +138,10 @@
     #random-pokemon-button {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         background-image: linear-gradient(45deg, rgb(185, 185, 185), rgb(87, 87, 87));
+        border-radius: 5px;
         color: white;
         height: 2rem;
-        width: 200px;
+        width: 250px;
         font-size: 1rem;
         margin-top: 0.5rem;
     }
