@@ -1,4 +1,4 @@
-   
+
 function addEventListener() {
     const buttonHtmlElmt = document.getElementById('random-pokemon-button');
     console.log(buttonHtmlElmt);
