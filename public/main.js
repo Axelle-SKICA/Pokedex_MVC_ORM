@@ -1,5 +1,5 @@
 
-function addEventListener() {
+function addButtonEventListener() {
     const buttonHtmlElmt = document.getElementById('random-pokemon-button');
     console.log(buttonHtmlElmt);
     buttonHtmlElmt.addEventListener("click", handleButtonClick);
@@ -26,4 +26,4 @@ async function handleButtonClick() {
 
 }
 
-addEventListener();
+addButtonEventListener();
